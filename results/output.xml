@@ -1,0 +1,986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.9 on linux)" generated="2025-02-23T20:56:31.922173" rpa="false" schemaversion="5">
+<suite id="s1" name="HomeWork" source="/home/siwat/Desktop/project/Testcases_with_RobotFramework_Selenium/HomeWork">
+<suite id="s1-s1" name="Testcases" source="/home/siwat/Desktop/project/Testcases_with_RobotFramework_Selenium/HomeWork/testcases">
+<suite id="s1-s1-s1" name="LoginTestcases" source="/home/siwat/Desktop/project/Testcases_with_RobotFramework_Selenium/HomeWork/testcases/LoginTestcases.robot">
+<kw name="Open Browser And Maximize" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:32.057851" level="INFO">Opening browser 'chrome' to base url 'https://notebooklm.google.com/'.</msg>
+<arg>${baseUrl}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-23T20:56:32.057453" elapsed="3.201547"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-23T20:56:35.259237" elapsed="0.021642"/>
+</kw>
+<status status="PASS" start="2025-02-23T20:56:32.056571" elapsed="3.224508"/>
+</kw>
+<test id="s1-s1-s1-t1" name="As a user, I want to login success with valid credential" line="15">
+<kw name="When LoginPageKeywords.user login to NotebookLM platform with ${email} and ${valid_password}" owner="LoginPageKeywords" source_name="user login to NotebookLM platform with ${username} and ${password}">
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:35.288782" level="INFO">Typing text 'pondteste23@gmail.com' into text field 'id=identifierId'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:56:35.287524" elapsed="0.235655"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:56:35.287008" elapsed="0.236330"/>
+</kw>
+<arg>id=identifierId</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2025-02-23T20:56:35.286404" elapsed="0.237070"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:35.524581" level="INFO">Clicking element 'xpath=//span[@jsname="V67aGc" and text()="Next"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:56:35.524354" elapsed="0.101275"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:56:35.524080" elapsed="0.101779"/>
+</kw>
+<arg>xpath=//span[@jsname="V67aGc" and text()="Next"]</arg>
+<status status="PASS" start="2025-02-23T20:56:35.523665" elapsed="0.102303"/>
+</kw>
+<kw name="Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:35.626972" level="INFO">Typing text 'fedfe0991815920' into text field 'name=Passwd'.</msg>
+<msg time="2025-02-23T20:56:35.723793" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:56:35.724075" level="FAIL">Element with locator 'name=Passwd' not found.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-23T20:56:35.626711" elapsed="0.098980">Element with locator 'name=Passwd' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:37.726384" level="INFO">Typing text 'fedfe0991815920' into text field 'name=Passwd'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:56:37.726084" elapsed="0.096613"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:56:35.626473" elapsed="2.196411"/>
+</kw>
+<arg>name=Passwd</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-02-23T20:56:35.626129" elapsed="2.196867"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:37.824054" level="INFO">Clicking element 'xpath=//span[@jsname="V67aGc" and text()="Next"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:56:37.823820" elapsed="0.066232"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:56:37.823511" elapsed="0.066675"/>
+</kw>
+<arg>xpath=//span[@jsname="V67aGc" and text()="Next"]</arg>
+<status status="PASS" start="2025-02-23T20:56:37.823162" elapsed="0.067130"/>
+</kw>
+<status status="PASS" start="2025-02-23T20:56:35.282634" elapsed="2.607769"/>
+</kw>
+<kw name="Then HomePageKeywords.NotebookLM should display home page and display message as &quot;ยินดีต้อนรับสู่ NotebookLM&quot;" owner="HomePageKeywords" source_name="NotebookLM should display home page and display message as &quot;${expected_message}&quot;">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:38.166582" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:56:38.167228" level="FAIL">Page should have contained text 'ยินดีต้อนรับสู่ NotebookLM' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-02-23T20:56:37.893447" elapsed="0.274991">Page should have contained text 'ยินดีต้อนรับสู่ NotebookLM' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:41.826207" level="INFO">Current page contains text 'ยินดีต้อนรับสู่ NotebookLM'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-02-23T20:56:40.169300" elapsed="1.657591"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:56:37.893196" elapsed="3.934191"/>
+</kw>
+<arg>${expected_message}</arg>
+<status status="PASS" start="2025-02-23T20:56:37.892727" elapsed="3.935180"/>
+</kw>
+<status status="PASS" start="2025-02-23T20:56:37.891649" elapsed="3.936660"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:41.843838" level="INFO">Clicking element 'xpath=//span[@class="mdc-button__label" and text() = "สร้าง"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:56:41.842529" elapsed="0.342395"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:56:41.840997" elapsed="0.344472"/>
+</kw>
+<arg>locator=xpath=//span[@class="mdc-button__label" and text() = "สร้าง"]</arg>
+<status status="PASS" start="2025-02-23T20:56:41.835472" elapsed="0.350552"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:43.060443" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:56:43.060670" level="FAIL">Page should have contained text 'เพิ่มแหล่งที่มาเพื่อเริ่มต้น' but did not.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2025-02-23T20:56:42.197311" elapsed="0.863761">Page should have contained text 'เพิ่มแหล่งที่มาเพื่อเริ่มต้น' but did not.</status>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:45.129386" level="INFO">Current page contains text 'เพิ่มแหล่งที่มาเพื่อเริ่มต้น'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-02-23T20:56:45.061725" elapsed="0.068240"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:56:42.195290" elapsed="2.935139"/>
+</kw>
+<arg>expected_text=เพิ่มแหล่งที่มาเพื่อเริ่มต้น</arg>
+<status status="PASS" start="2025-02-23T20:56:42.190127" elapsed="2.940785"/>
+</kw>
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:45.140183" level="INFO">Clicking element 'xpath=//span[@class="mdc-button__label" and text() = "อัปโหลดแหล่งที่มา"]'.</msg>
+<msg time="2025-02-23T20:56:46.677046" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:56:46.677392" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-23T20:56:45.139199" elapsed="1.540413">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:48.681579" level="INFO">Clicking element 'xpath=//span[@class="mdc-button__label" and text() = "อัปโหลดแหล่งที่มา"]'.</msg>
+<msg time="2025-02-23T20:56:50.194085" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:56:50.194671" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-23T20:56:48.680487" elapsed="1.516915">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:52.199718" level="INFO">Clicking element 'xpath=//span[@class="mdc-button__label" and text() = "อัปโหลดแหล่งที่มา"]'.</msg>
+<msg time="2025-02-23T20:56:53.704354" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:56:53.705109" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-23T20:56:52.198643" elapsed="1.509971">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:55.711025" level="INFO">Clicking element 'xpath=//span[@class="mdc-button__label" and text() = "อัปโหลดแหล่งที่มา"]'.</msg>
+<msg time="2025-02-23T20:56:57.168475" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:56:57.169251" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-23T20:56:55.709936" elapsed="1.463611">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:56:59.175822" level="INFO">Clicking element 'xpath=//span[@class="mdc-button__label" and text() = "อัปโหลดแหล่งที่มา"]'.</msg>
+<msg time="2025-02-23T20:57:00.662157" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:57:00.662994" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-23T20:56:59.174720" elapsed="1.492612">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</status>
+</kw>
+<msg time="2025-02-23T20:57:00.668479" level="FAIL">Keyword 'Click Element' failed after retrying 5 times. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</msg>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="FAIL" start="2025-02-23T20:56:45.138121" elapsed="15.534310">Keyword 'Click Element' failed after retrying 5 times. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</status>
+</kw>
+<arg>xpath=//span[@class="mdc-button__label" and text() = "อัปโหลดแหล่งที่มา"]</arg>
+<status status="FAIL" start="2025-02-23T20:56:45.136848" elapsed="15.536818">Keyword 'Click Element' failed after retrying 5 times. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="mdc-button__label"&gt;...&lt;/span&gt; is not clickable at point (876, 524). Other element would receive the click: &lt;p _ngcontent-ng-c2984716927="" class="dropzone__supported-file-types ng-star-inserted"&gt;...&lt;/p&gt;
+  (Session info: chrome=131.0.6778.204)
+Stacktrace:
+#0 0x5bb672c4f1fa &lt;unknown&gt;
+#1 0x5bb67275f810 &lt;unknown&gt;
+#2 0x5bb6727b5206 &lt;unknown&gt;
+#3 0x5bb6727b316d &lt;unknown&gt;
+#4 0x5bb6727b0885 &lt;unknown&gt;
+#5 0x5bb6727afa48 &lt;unknown&gt;
+#6 0x5bb6727a31f5 &lt;unknown&gt;
+#7 0x5bb6727d2582 &lt;unknown&gt;
+#8 0x5bb6727a2b38 &lt;unknown&gt;
+#9 0x5bb6727d274e &lt;unknown&gt;
+#10 0x5bb6727f1007 &lt;unknown&gt;
+#11 0x5bb6727d2323 &lt;unknown&gt;
+#12 0x5bb6727a0de0 &lt;unknown&gt;
+#13 0x5bb6727a1dbe &lt;unknown&gt;
+#14 0x5bb672c1b12b &lt;unknown&gt;
+#15 0x5bb672c1f0c7 &lt;unknown&gt;
+#16 0x5bb672c086cc &lt;unknown&gt;
+#17 0x5bb672c1fc47 &lt;unknown&gt;
+#18 0x5bb672bed67f &lt;unknown&gt;
+#19 0x5bb672c3e288 &lt;unknown&gt;
+#20 0x5bb672c3e450 &lt;unknown&gt;
+#21 0x5bb672c4e076 &lt;unknown&gt;
+#22 0x71181b29caa4 &lt;unknown&gt;
+#23 0x71181b329c3c &lt;unknown&gt;
+</status>
+</kw>
+<msg time="2025-02-23T20:57:00.674703" level="INFO">${is_element_present} = False</msg>
+<var>${is_element_present}</var>
+<arg>CommonKeywords.Wait until element is ready then click element</arg>
+<arg>xpath=//span[@class="mdc-button__label" and text() = "อัปโหลดแหล่งที่มา"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-02-23T20:56:45.135655" elapsed="15.539563"/>
+</kw>
+<if>
+<branch type="IF" condition="not ${is_element_present}">
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:00.681396" level="INFO">Clicking element 'xpath=//button[@aria-label="ปิดกล่องโต้ตอบ"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:00.680472" elapsed="0.237080"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:00.679421" elapsed="0.238834"/>
+</kw>
+<arg>xpath=//button[@aria-label="ปิดกล่องโต้ตอบ"]</arg>
+<status status="PASS" start="2025-02-23T20:57:00.678121" elapsed="0.240645"/>
+</kw>
+<kw name="Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:00.922830" level="INFO">Clicking element 'xpath=//span[@class="mdc-button__label" and text() = "อัปโหลดแหล่งที่มา"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:00.921856" elapsed="0.272225"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:00.920797" elapsed="0.274036"/>
+</kw>
+<arg>xpath=//span[@class="mdc-button__label" and text() = "อัปโหลดแหล่งที่มา"]</arg>
+<status status="PASS" start="2025-02-23T20:57:00.919461" elapsed="0.276195"/>
+</kw>
+<status status="PASS" start="2025-02-23T20:57:00.676848" elapsed="0.519202"/>
+</branch>
+<status status="PASS" start="2025-02-23T20:57:00.676622" elapsed="0.519675"/>
+</if>
+<kw name="Then CommonKeywords.Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:01.303543" level="INFO">Current page contains text 'อัปโหลดแหล่งข้อมูล'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-02-23T20:57:01.204510" elapsed="0.100084"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:01.203269" elapsed="0.102027"/>
+</kw>
+<arg>expected_text=อัปโหลดแหล่งข้อมูล</arg>
+<status status="PASS" start="2025-02-23T20:57:01.197002" elapsed="0.109003"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:01.321129" level="INFO">Clicking element 'xpath=//span[text() = "เว็บไซต์"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:01.320044" elapsed="0.332766"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:01.318708" elapsed="0.335090"/>
+</kw>
+<arg>locator=xpath=//span[text() = "เว็บไซต์"]</arg>
+<status status="PASS" start="2025-02-23T20:57:01.312730" elapsed="0.341857"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:01.667507" level="INFO">Typing text 'https://policywatch.thaipbs.or.th/article/environment-21' into text field 'id=mat-input-0'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:01.666328" elapsed="0.287082"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:01.664871" elapsed="0.288748"/>
+</kw>
+<arg>locator=id=mat-input-0</arg>
+<arg>text=https://policywatch.thaipbs.or.th/article/environment-21</arg>
+<status status="PASS" start="2025-02-23T20:57:01.659390" elapsed="0.294402"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:01.957854" level="INFO">Clicking element 'xpath=//span[@class="mdc-button__label" and text() = "แทรก"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:01.957564" elapsed="0.074245"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:01.957119" elapsed="0.074845"/>
+</kw>
+<arg>locator=xpath=//span[@class="mdc-button__label" and text() = "แทรก"]</arg>
+<status status="PASS" start="2025-02-23T20:57:01.955481" elapsed="0.076626"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until page contains element then verify element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:02.435836" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:57:02.436286" level="FAIL">Page should have contained element '//div[@class="summary-content ng-star-inserted"]' but did not.</msg>
+<arg>${locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-23T20:57:02.034663" elapsed="0.403176">Page should have contained element '//div[@class="summary-content ng-star-inserted"]' but did not.</status>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:04.972354" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:57:04.973250" level="FAIL">Page should have contained element '//div[@class="summary-content ng-star-inserted"]' but did not.</msg>
+<arg>${locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-23T20:57:04.438627" elapsed="0.536799">Page should have contained element '//div[@class="summary-content ng-star-inserted"]' but did not.</status>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:07.521605" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:57:07.521971" level="FAIL">Page should have contained element '//div[@class="summary-content ng-star-inserted"]' but did not.</msg>
+<arg>${locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-23T20:57:06.976497" elapsed="0.546393">Page should have contained element '//div[@class="summary-content ng-star-inserted"]' but did not.</status>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:10.060614" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:57:10.061459" level="FAIL">Page should have contained element '//div[@class="summary-content ng-star-inserted"]' but did not.</msg>
+<arg>${locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-23T20:57:09.523641" elapsed="0.541568">Page should have contained element '//div[@class="summary-content ng-star-inserted"]' but did not.</status>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:12.089510" level="INFO">Current page contains element '//div[@class="summary-content ng-star-inserted"]'.</msg>
+<arg>${locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-23T20:57:12.066524" elapsed="0.023558"/>
+</kw>
+<arg>7x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:02.034366" elapsed="10.056178"/>
+</kw>
+<arg>locator=//div[@class="summary-content ng-star-inserted"]</arg>
+<status status="PASS" start="2025-02-23T20:57:02.033246" elapsed="10.057782"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then input text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:12.103829" level="INFO">Typing text 'สรุปข้อมูลทั้งหมดที่แนบไปภายใชใน 3 บันทัด' into text field 'xpath=//textarea[@placeholder="เริ่มพิมพ์..."]'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:12.102760" elapsed="0.381252"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Input Text</arg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:12.101629" elapsed="0.383100"/>
+</kw>
+<arg>locator=xpath=//textarea[@placeholder="เริ่มพิมพ์..."]</arg>
+<arg>text=สรุปข้อมูลทั้งหมดที่แนบไปภายใชใน 3 บันทัด</arg>
+<status status="PASS" start="2025-02-23T20:57:12.095613" elapsed="0.389868"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:12.517175" level="INFO">Clicking element 'xpath=//button[@type="submit" and @aria-label="ส่ง"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:12.515835" elapsed="0.276866"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:12.514311" elapsed="0.278956"/>
+</kw>
+<arg>locator=xpath=//button[@type="submit" and @aria-label="ส่ง"]</arg>
+<status status="PASS" start="2025-02-23T20:57:12.505820" elapsed="0.288168"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until page contains element then verify element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:13.390728" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-23T20:57:13.390983" level="FAIL">Page should have contained element '//mat-card[@class="mat-mdc-card mdc-card to-user-message-card-content gmat-mdc-card"]' but did not.</msg>
+<arg>${locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="FAIL" start="2025-02-23T20:57:12.805909" elapsed="0.585561">Page should have contained element '//mat-card[@class="mat-mdc-card mdc-card to-user-message-card-content gmat-mdc-card"]' but did not.</status>
+</kw>
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:15.416116" level="INFO">Current page contains element '//mat-card[@class="mat-mdc-card mdc-card to-user-message-card-content gmat-mdc-card"]'.</msg>
+<arg>${locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-23T20:57:15.392178" elapsed="0.024481"/>
+</kw>
+<arg>7x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:12.804405" elapsed="2.612738"/>
+</kw>
+<arg>locator=//mat-card[@class="mat-mdc-card mdc-card to-user-message-card-content gmat-mdc-card"]</arg>
+<status status="PASS" start="2025-02-23T20:57:12.799456" elapsed="2.618136"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:15.426865" level="INFO">Clicking element 'xpath=//a[@aria-label="หน้าแรกของ NotebookLM"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:15.425953" elapsed="0.400098"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:15.424910" elapsed="0.401658"/>
+</kw>
+<arg>locator=xpath=//a[@aria-label="หน้าแรกของ NotebookLM"]</arg>
+<status status="PASS" start="2025-02-23T20:57:15.421086" elapsed="0.405971"/>
+</kw>
+<kw name="Then HomePageKeywords.NotebookLM should display home page and display message as &quot;ยินดีต้อนรับสู่ NotebookLM&quot;" owner="HomePageKeywords" source_name="NotebookLM should display home page and display message as &quot;${expected_message}&quot;">
+<kw name="Wait until page contains element then verify text" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:15.900715" level="INFO">Current page contains text 'ยินดีต้อนรับสู่ NotebookLM'.</msg>
+<arg>${expected_text}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2025-02-23T20:57:15.838310" elapsed="0.062981"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain</arg>
+<arg>${expected_text}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:15.837123" elapsed="0.064645"/>
+</kw>
+<arg>${expected_message}</arg>
+<status status="PASS" start="2025-02-23T20:57:15.835848" elapsed="0.066372"/>
+</kw>
+<status status="PASS" start="2025-02-23T20:57:15.830943" elapsed="0.071663"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:15.914835" level="INFO">Clicking element 'xpath=//mat-icon[@class="mat-icon notranslate project-button-more-icon google-symbols mat-icon-no-color"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:15.913353" elapsed="0.219072"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:15.911840" elapsed="0.221107"/>
+</kw>
+<arg>locator=xpath=//mat-icon[@class="mat-icon notranslate project-button-more-icon google-symbols mat-icon-no-color"]</arg>
+<status status="PASS" start="2025-02-23T20:57:15.907585" elapsed="0.225830"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until page contains element then verify element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:16.180334" level="INFO">Current page contains element 'xpath=//mat-icon[text()="delete"]'.</msg>
+<arg>${locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-23T20:57:16.143113" elapsed="0.037943"/>
+</kw>
+<arg>7x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:16.141936" elapsed="0.039613"/>
+</kw>
+<arg>locator=xpath=//mat-icon[text()="delete"]</arg>
+<status status="PASS" start="2025-02-23T20:57:16.137679" elapsed="0.044333"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:16.195177" level="INFO">Clicking element 'xpath=//mat-icon[text()="delete"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:16.194178" elapsed="0.254500"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:16.192976" elapsed="0.256331"/>
+</kw>
+<arg>locator=xpath=//mat-icon[text()="delete"]</arg>
+<status status="PASS" start="2025-02-23T20:57:16.186795" elapsed="0.263147"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until page contains element then verify element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Page Should Contain Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:16.508416" level="INFO">Current page contains element 'xpath=//div[@class="delete-project-container"]'.</msg>
+<arg>${locator}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="PASS" start="2025-02-23T20:57:16.461020" elapsed="0.048142"/>
+</kw>
+<arg>7x</arg>
+<arg>2s</arg>
+<arg>Page Should Contain Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:16.459597" elapsed="0.050103"/>
+</kw>
+<arg>locator=xpath=//div[@class="delete-project-container"]</arg>
+<status status="PASS" start="2025-02-23T20:57:16.454415" elapsed="0.055744"/>
+</kw>
+<kw name="Then CommonKeywords.Wait until element is ready then click element" owner="CommonKeywords">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:16.523287" level="INFO">Clicking element 'xpath=//button[@type="submit" and @aria-label="ยืนยันการลบ"]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-23T20:57:16.522274" elapsed="0.183602"/>
+</kw>
+<arg>5x</arg>
+<arg>2s</arg>
+<arg>Click Element</arg>
+<arg>${locator}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-02-23T20:57:16.520902" elapsed="0.185185"/>
+</kw>
+<arg>locator=xpath=//button[@type="submit" and @aria-label="ยืนยันการลบ"]</arg>
+<status status="PASS" start="2025-02-23T20:57:16.515847" elapsed="0.190389"/>
+</kw>
+<kw name="user logout from NotebookLM platform" owner="HomePageKeywords" type="TEARDOWN">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-23T20:57:16.709476" level="INFO">Opening browser 'chrome' to base url 'https://accounts.google.com/Logout?ec=GAdAmgU&amp;hl=th'.</msg>
+<arg>https://accounts.google.com/Logout?ec=GAdAmgU&amp;hl=th</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-23T20:57:16.708989" elapsed="4.094813"/>
+</kw>
+<status status="PASS" start="2025-02-23T20:57:16.708081" elapsed="4.095969"/>
+</kw>
+<status status="PASS" start="2025-02-23T20:56:35.281204" elapsed="45.523099"/>
+</test>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-02-23T20:57:20.805629" elapsed="0.148040"/>
+</kw>
+<status status="PASS" start="2025-02-23T20:56:31.941642" elapsed="49.012290"/>
+</suite>
+<status status="PASS" start="2025-02-23T20:56:31.940290" elapsed="49.015377"/>
+</suite>
+<status status="PASS" start="2025-02-23T20:56:31.924720" elapsed="49.032079"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="HomeWork" id="s1" pass="1" fail="0" skip="0">HomeWork</stat>
+<stat name="Testcases" id="s1-s1" pass="1" fail="0" skip="0">HomeWork.Testcases</stat>
+<stat name="LoginTestcases" id="s1-s1-s1" pass="1" fail="0" skip="0">HomeWork.Testcases.LoginTestcases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
