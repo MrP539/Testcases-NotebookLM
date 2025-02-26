@@ -3,8 +3,8 @@ Library         SeleniumLibrary
 Library         OperatingSystem
 Resource        ../keywords/LoginPageKeywords.robot
 Resource        ../keywords/HomePageKeywords.robot
-Variables       /home/siwat/Desktop/project/Testcases_with_RobotFramework_Selenium/HomeWork/resources/config/config.yaml
-Variables       /home/siwat/Desktop/project/Testcases_with_RobotFramework_Selenium/HomeWork/resources/testdata/testdata.yaml
+Variables       ../resources/config/config.yaml
+Variables       ../resources/testdata/testdata.yaml
 Suite Setup     Open Browser And Maximize
 Suite Teardown  SeleniumLibrary.Close All Browsers 
 
