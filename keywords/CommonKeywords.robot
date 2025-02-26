@@ -17,3 +17,7 @@ Wait until page contains element then verify text
 Wait until page contains element then verify element
     [Arguments]    ${locator}
     Wait Until Keyword Succeeds   7x    2s  Page Should Contain Element        ${locator}
+
+Wait until page contains element then verify not element
+   [Arguments]    ${locator}
+    Wait Until Keyword Succeeds    7x    2s  Page Should Not Contain Element    ${locator}
